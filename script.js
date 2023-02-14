@@ -16,7 +16,7 @@ const getBgColorToP = (ballArray) => {
   const randomBall = Math.floor(Math.random() * ballArray.length);
   const rgbFromRandomBall = ballArray[randomBall].style.backgroundColor;
   let excludesRgb = '';
-  for (let i = 3; i < rgbFromRandomBall.length; i+= 1) {
+  for (let i = 3; i < rgbFromRandomBall.length; i += 1) {
     excludesRgb += rgbFromRandomBall[i];
   }
   return excludesRgb;
