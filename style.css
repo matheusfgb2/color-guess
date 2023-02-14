@@ -1,10 +1,12 @@
 * {
   text-align: center;
 }
+
 #circles {
   display: flex;
   justify-content: center;
 }
+
 .ball {
   height: 80px;
   width: 80px;
