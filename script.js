@@ -2,6 +2,7 @@ const circles = document.getElementById('circles');
 const balls = document.getElementsByClassName('ball');
 const rgbP = document.querySelector('p');
 const pAnswer = document.getElementById('answer');
+const resetBtn = document.getElementById('reset-game');
 
 const generateRandomColor = () => {
   const rRandom = Math.floor(Math.random() * 255);
@@ -33,4 +34,8 @@ circles.addEventListener('click', (event) => {
   } else {
     pAnswer.innerText = 'Errou! Tente novamente!';
   }
+});
+
+resetBtn.addEventListener('click', () => {
+  window.location.reload();
 });
