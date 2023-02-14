@@ -1,0 +1,10 @@
+#circles {
+  display: flex;
+}
+.ball {
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  border: 1px solid black;
+  margin-right: 5px;
+}
