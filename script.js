@@ -22,27 +22,24 @@ const getBgColorToP = (ballArray) => {
   return excludesRgb;
 };
 
+let score = Number(localStorage.getItem('placar')) || 0;
+
 window.onload = () => {
   for (let i = 0; i < balls.length; i += 1) {
     balls[i].style.backgroundColor = generateRandomColor();
   }
   rgbP.innerText = getBgColorToP(balls);
-  if (localStorage.getItem('placar')) {
-    pScore.innerText = `Placar: ${localStorage.getItem('placar')}`;
-  }
+  pScore.innerText = `Placar: ${score}`;
 };
 
-let score = 0;
-if (localStorage.getItem('placar')) {
-  score = +localStorage.getItem('placar');
-}
-
-circles.addEventListener('click', (event) => {
+circles.addEventListener('click', async (event) => {
   if (event.target.style.backgroundColor.includes(rgbP.innerText)) {
     pAnswer.innerText = 'Acertou!';
     score += 3;
     pScore.innerText = `Placar: ${score}`;
     localStorage.setItem('placar', score);
+    await setInterval(() => window.location.reload(), 300);
+
   } else {
     pAnswer.innerText = 'Errou! Tente novamente!';
   }
@@ -50,4 +47,5 @@ circles.addEventListener('click', (event) => {
 
 resetBtn.addEventListener('click', () => {
   window.location.reload();
+  localStorage.clear();
 });
