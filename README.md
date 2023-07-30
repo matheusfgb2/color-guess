@@ -1,14 +1,13 @@
-# :construction: README em construção ! :construction:
-<!-- Olá, Tryber!
-Esse é apenas um arquivo inicial para o README do seu projeto.
-É essencial que você preencha esse documento por conta própria, ok?
-Não deixe de usar nossas dicas de escrita de README de projetos, e deixe sua criatividade brilhar!
-:warning: IMPORTANTE: você precisa deixar nítido:
-- quais arquivos/pastas foram desenvolvidos por você; 
-- quais arquivos/pastas foram desenvolvidos por outra pessoa estudante;
-- quais arquivos/pastas foram desenvolvidos pela Trybe.
--->
-Este projeto foi desenvolvido no curso da Trybe, durante o módulo de fundamentos, para solidificar conhecimentos em JavaScript, HTML e CSS.
+# Projeto Color Guess
+
+## Sobre
+O projeto, desenvolvido durante o módulo de fundamentos da Trybe, é um jogo de adivinhação de cores. A página possui um título com o nome do jogo e um texto com o código RGB da cor a ser adivinhada. São apresentados 6 círculos coloridos como opções de cores para adivinhar, cujas cores são geradas dinamicamente via JavaScript. Ao clicar em um círculo, um texto é exibido indicando se a escolha foi correta ou não. Além disso, há um botão "Reiniciar" que permite gerar novas cores e jogar novamente. O jogo também possui um placar que incrementa 3 pontos para cada acerto.
+
+## Habilidades Utilizadas
+
+- Manipulação do DOM com JavaScript
+- Estilização de elementos HTML com CSS
+- LocalStorage para armazenamento local
 
 ## Requisitos Cumpridos
 **OBS: Parte retirada do README do repositório do projeto da Trybe**
@@ -136,3 +135,13 @@ O não cumprimento de um requisito, total ou parcialmente, impactará em sua ava
 
 </details>
 </details>
+
+## Instalação e Uso
+
+**Obs: É requerida a instalação do plugin Live Server para o VSCode**
+
+1. Faça o clone do repositório: ```git clone git@github.com:matheusfgb2/color-guess.git```
+
+2. Navegue até o diretório do projeto: ```cd color-guess```
+
+3. Abra o arquivo `index.html` no próprio VSCode e execute o plugin Live Server, clicando em "Go Live" no canto inferior direito.
